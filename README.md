@@ -33,7 +33,13 @@ sudo chmod +x firewall_country_block.sh
 sudo ./block-overseas-network.sh block
 ```
 
-- 차단 해제 (전부 허용):
-```
-sudo ./block-overseas-network.sh unblock
-```
+## 📁 한국 IP 대역
+https://github.com/herrbischoff/country-ip-blocks/blob/master/ipv4/kr.cidr
+
+## ⚠️ 주의사항
+이 스크립트는 서버의 INPUT 체인에 iptables 규칙을 추가하므로, 사용 중인 방화벽 정책에 따라 테스트 후 사용하세요.
+
+ipset을 지원하지 않는 환경에서는 동작하지 않습니다.
+
+클라우드 호스팅에서는 해당 정책이 정상 동작하지 않을 수 있습니다 (예: AWS 보안 그룹 등).
+
