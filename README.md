@@ -18,7 +18,7 @@
 ### 1. 필요 패키지 설치
 
 ```bash
-sudo apt update && sudo apt install ipset curl -y
+sudo apt update -y && sudo apt install ipset curl -y
 ```
 
 ### 2. 스크립트 다운로드
